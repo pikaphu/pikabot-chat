@@ -24,4 +24,4 @@ app.get('/test', (req, res) => {
     res.send('test ok: ' + dt);
 });
 
-app.listen(5000, () => console.log('Express server is listening on port 5000'));
+app.listen(process.env.SERVE_PORT, () => console.log('Express server is listening on port ' + process.env.SERVE_PORT));
